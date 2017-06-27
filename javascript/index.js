@@ -3,7 +3,16 @@ $(document).ready(function() {
   $('#name').fadeIn(3000);
   $('#dev').fadeIn(4000);
   $('#from').fadeIn(5000);
-
+  $('div.tagsort-tags-container').tagSort({
+  items: '.item-to-filter',
+  tagElement: 'span',
+  tagClassPrefix: false,
+  itemTagsView: false,
+  itemTagsSeperator: ' ',
+  itemTagsElement: false,
+  sortType: 'exclusive',
+  fadeTime: 200
+});
 	$('#fullpage').fullpage({
 		//Navigation
 		menu: '#menu',

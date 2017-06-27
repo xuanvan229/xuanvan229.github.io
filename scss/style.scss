@@ -65,9 +65,7 @@ h5
     padding-top:0 !important;
     padding-bottom: 0 !important;
     .menu{
-      background: #fff;
       height:100%;
-      opacity: 0.4;
       .left-menu{
         padding-top: 20px;
         padding-left: 20px;
@@ -83,21 +81,37 @@ h5
         justify-content: center;
         align-items: center;
         font-family: 'Raleway', sans-serif;
+
         h1{
           display: none;
           font-size:50px;
-          line-height: 60px;
+          line-height: 1.2em;
           color:#444444;
           span{
             color:#008299
           }
+          @media screen and (max-width:1009px){
+            font-size: 42px;
+          }
+          @media screen and (max-width:768px){
+            font-size: 32px;
+          }
+          @media screen and (max-width:500px){
+            font-size: 24px;
+          }
+        }
+        .content{
+          margin-top: -100px;
         }
       }
     }
   }
+
+
   .main-post{
     height: 100%;
-    width: 1100px;
+    max-width: 1100px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     .container_post{
@@ -164,7 +178,6 @@ h5
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
   padding-top: 50px;
 .post-right{
   width: 100%;
@@ -172,6 +185,7 @@ h5
   p{
     text-align: justify;
     padding: 10px 0;
+    padding: 0 10px;
     line-height: 1.5em;
     font-size: 19px;
     font-family: 'Noto Serif', serif;
@@ -179,5 +193,33 @@ h5
       width: 100%;
     }
   }
+  }
 }
+.tagsort-tags-container{
+  margin-top: 20px;
+  display: flex;
+    flex-wrap: wrap;
+  span{
+    padding:10px;
+    border:1px solid #000;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  span.active{
+    background-color: red;
+  }
+}
+.list-item{
+  margin-top: 20px;
+  .item-to-filter{
+    width:auto;
+    float:left;
+    margin:10px;
+  }
+}
+.body_post_list{
+  width:100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
