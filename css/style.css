@@ -152,13 +152,14 @@ h5 {
     height: 100%; }
     .post .post-right p {
       text-align: justify;
-      padding: 10px 0;
-      padding: 0 10px;
+      padding: 10px 10px;
       line-height: 1.5em;
       font-size: 19px;
-      font-family: 'Noto Serif', serif; }
+      font-family: 'Inconsolata', monospace; }
       .post .post-right p img {
         width: 100%; }
+      .post .post-right p strong {
+        font-weight: bold; }
 
 .tagsort-tags-container {
   margin-top: 20px;
