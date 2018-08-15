@@ -1,0 +1,21 @@
+<h1 id="Elm-Core-Libraries"><a href="#Elm-Core-Libraries" class="headerlink" title="Elm Core Libraries"></a>Elm Core Libraries</h1><p><a href="https://travis-ci.org/elm-lang/core"><img src="https://travis-ci.org/elm-lang/core.svg?branch=master" alt="Build Status"></a></p>
+<p>Every Elm project needs the core libraries. They provide basic functionality including:</p>
+<ul>
+<li>The Basics &mdash; addition, subtraction, etc.</li>
+<li>Data Structures &mdash; lists, dictionaries, sets, etc.</li>
+</ul>
+<h2 id="Default-Imports"><a href="#Default-Imports" class="headerlink" title="Default Imports"></a>Default Imports</h2><p>All Elm files have some default imports:</p>
+<pre><code class="elm"><span class="keyword">import</span> Basics <span class="keyword">exposing</span> (..)
+<span class="keyword">import</span> List <span class="keyword">exposing</span> ( <span class="type">List</span>, (::) )
+<span class="keyword">import</span> Maybe <span class="keyword">exposing</span> ( <span class="type">Maybe</span>( <span class="type">Just</span>, <span class="type">Nothing</span> ) )
+<span class="keyword">import</span> Result <span class="keyword">exposing</span> ( <span class="type">Result</span>( <span class="type">Ok</span>, <span class="type">Err</span> ) )
+<span class="keyword">import</span> String
+<span class="keyword">import</span> Tuple
+
+<span class="keyword">import</span> Debug
+
+<span class="keyword">import</span> Platform <span class="keyword">exposing</span> ( <span class="type">Program</span> )
+<span class="keyword">import</span> Platform.Cmd <span class="keyword">exposing</span> ( <span class="type">Cmd</span>, (!) )
+<span class="keyword">import</span> Platform.Sub <span class="keyword">exposing</span> ( <span class="type">Sub</span> )
+</code></pre>
+<p>The intention is to include things that are both extremely useful and very<br>unlikely to overlap with anything that anyone will ever write in a library.<br>By keeping the set of default imports small, it also becomes easier to use<br>whatever version of <code>map</code> suits your fancy. Finally, it makes it easier to<br>figure out where the heck a function is coming from.</p>

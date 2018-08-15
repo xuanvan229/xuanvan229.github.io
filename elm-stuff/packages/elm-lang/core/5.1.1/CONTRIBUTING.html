@@ -1,0 +1,13 @@
+<h1 id="Contributing-to-the-core-libraries"><a href="#Contributing-to-the-core-libraries" class="headerlink" title="Contributing to the core libraries"></a>Contributing to the core libraries</h1><p>Thanks helping with the development of Elm! This document describes the basic<br>standards for opening pull requests and making the review process as smooth as<br>possible.</p>
+<h2 id="Ground-rules"><a href="#Ground-rules" class="headerlink" title="Ground rules"></a>Ground rules</h2><ul>
+<li>Always make pull requests minimal. If it can be split up, it should be split up.</li>
+<li>Use style consistent with the file you are modifying.</li>
+<li>Use descriptive titles for PRs</li>
+<li>Provide all the necessary context for evaluation in the PR.<br>If there are relevant issues or examples or discussions, add them.<br>If things can be summarized, summarize them. The easiest PRs are ones<br>that already address the reviewers questions and concerns.</li>
+</ul>
+<h2 id="Documentation-Fixes"><a href="#Documentation-Fixes" class="headerlink" title="Documentation Fixes"></a>Documentation Fixes</h2><p>If you want to fix docs, just open a PR. This is super helpful!</p>
+<h2 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h2><p>If you find an issue or see one you want to work on, go for it!</p>
+<p>The best strategy is often to dive in. Asking for directions usually<br>does not work. If someone knew the specifics and knew how how to fix<br>it, it is likely they would have already sent the PR themselves!</p>
+<p>Also, be sure you are testing.</p>
+<h2 id="Adding-New-Functions"><a href="#Adding-New-Functions" class="headerlink" title="Adding New Functions"></a>Adding New Functions</h2><p>We are fairly conservative about adding new functions to core libraries.<br>If you want to augment the <code>List</code> or <code>Array</code> library, we recommend creating<br>small packages called <code>list-extras</code> or <code>array-extras</code> that have all the<br>features you want. There are already several such packages maintained at<br>the <a href="https://github.com/elm-community">Elm Community organization</a> that<br>welcome contributions in the form of pull requests.</p>
+<p>Long term, we will set up a process to review <code>*-extras</code> packages to move<br>stuff into core. By going through packages, it will be much easier to assess<br>whether a function is pleasant and useful in practice before committing to it<br>in the core libraries.</p>
