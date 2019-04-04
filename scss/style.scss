@@ -6,9 +6,10 @@
     font-family: GothamMedium;
     src: url(../font/Gotham-Medium.otf);
 }
-body {
-  background: #f1f1f1;
-}
+
+$primary-color: #f74646;
+$font-color: #1e0233;
+
 h1
 {
 	font-size: 30px;
@@ -75,6 +76,9 @@ h5
         a{
           text-decoration: none;
           font-size: 30px;
+          i {
+            color: $primary-color;
+          }
         }
       }
       .content-menu{
@@ -91,7 +95,8 @@ h5
           line-height: 1.2em;
           color:#444444;
           span{
-            color:#008299
+            // color:#008299
+            color: $primary-color;
           }
           @media screen and (max-width:1009px){
             font-size: 42px;
@@ -122,12 +127,16 @@ h5
       margin-left: auto;
       margin-right: auto;
       .post{
-        .asdasdas{
+        .item-post{
+          .blog-post-title {
+            margin-bottom: 1rem;
+          }
           a{
             font-size: 30px;
             text-decoration: none;
             font-family: Gotham;
-            color:#000;
+            color:$font-color;
+            letter-spacing: 1px;
           }
           h3{
             font-family: 'Lora', serif;
@@ -137,7 +146,7 @@ h5
       }
       hr{
         border:0;
-        border-top: 1px solid #fff;
+        border-top: 1px solid $font-color;
         margin-top: 20px;
         margin-bottom: 20px;
       }
@@ -154,6 +163,9 @@ h5
     position: absolute;
     top:20px;
     left:20px;
+    i {
+      color: $primary-color;
+    }
   }
   img{
     width:100%;
@@ -165,9 +177,10 @@ h5
     position: absolute;
     top:50%;
     text-align: center;
+    color: $font-color;
     h1{
       font-family: Gotham;
-
+      margin-bottom: 1rem;
     }
     h3{
       font-family: "Open Sans";
@@ -175,6 +188,13 @@ h5
     }
   }
 
+}
+.body-page {
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/vintage-concrete.png");
+}
+
+.main-article {
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/vintage-concrete.png");
 }
 .post{
   max-width: 1100px;
@@ -186,20 +206,28 @@ h5
   width: 100%;
   height: 100%;
   font-family: 'Inconsolata', monospace;
-  ul {
-    margin-left: 2rem;
-    list-style: circle;
-    li{
+  h1,h2,h3,h4,h5 {
     margin-bottom: 1rem;
-    }
+  }
+  h2 {
+    padding: 0 10px;
+  }
+  h3 {
+    padding: 0 13px;
+  }
+  h4 {
+    padding: 0 15px;
+  }
+  h5 {
+    padding: 0 17px;
   }
   p{
     text-align: justify;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+    padding: 0 20px;
     line-height: 1.5em;
-    font-size: 19px;
-    
+    font-size: 20px;
+    color: $font-color;
+    margin-bottom: 1rem;
     img{
       max-width: 100%;
       width: auto;
