@@ -7,8 +7,20 @@
     src: url(../font/Gotham-Medium.otf);
 }
 
-$primary-color: #f74646;
-$font-color: #1e0233;
+@font-face {
+    font-family: InterMedium;
+    src: url(../font/Inter/Inter-Medium.otf);
+}
+
+@font-face {
+  font-family: InterBold;
+  src: url(../font/Inter/Inter-Bold.otf);
+}
+
+body {
+  font-family: InterMedium;
+  background: rgb(248, 241, 227);
+}
 
 h1
 {
@@ -76,9 +88,6 @@ h5
         a{
           text-decoration: none;
           font-size: 30px;
-          i {
-            color: $primary-color;
-          }
         }
       }
       .content-menu{
@@ -95,8 +104,7 @@ h5
           line-height: 1.2em;
           color:#444444;
           span{
-            // color:#008299
-            color: $primary-color;
+            color:#008299
           }
           @media screen and (max-width:1009px){
             font-size: 42px;
@@ -127,26 +135,25 @@ h5
       margin-left: auto;
       margin-right: auto;
       .post{
-        .item-post{
-          .blog-post-title {
-            margin-bottom: 1rem;
-          }
+        .asdasdas{
           a{
             font-size: 30px;
             text-decoration: none;
-            font-family: Gotham;
-            color:$font-color;
-            letter-spacing: 1px;
+            font-family: 'InterBold';
+            font-weight: bold;
+            margin-bottom: 10px;
+            color:#000;
           }
-          h3{
+          h4{
             font-family: 'Lora', serif;
+            margin-top: 10px;
             font-style: italic;
           }
         }
       }
       hr{
         border:0;
-        border-top: 1px solid $font-color;
+        border-top: 1px solid #fff;
         margin-top: 20px;
         margin-bottom: 20px;
       }
@@ -163,9 +170,6 @@ h5
     position: absolute;
     top:20px;
     left:20px;
-    i {
-      color: $primary-color;
-    }
   }
   img{
     width:100%;
@@ -177,24 +181,16 @@ h5
     position: absolute;
     top:50%;
     text-align: center;
-    color: $font-color;
     h1{
       font-family: Gotham;
-      margin-bottom: 1rem;
-    }
-    h3{
-      font-family: "Open Sans";
 
+    }
+    h3, h2{
+      font-family: "Open Sans";
+      margin-top: 10px;
     }
   }
 
-}
-.body-page {
-  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/vintage-concrete.png");
-}
-
-.main-article {
-  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/vintage-concrete.png");
 }
 .post{
   max-width: 1100px;
@@ -206,28 +202,11 @@ h5
   width: 100%;
   height: 100%;
   font-family: 'Inconsolata', monospace;
-  h1,h2,h3,h4,h5 {
-    margin-bottom: 1rem;
-  }
-  h2 {
-    padding: 0 10px;
-  }
-  h3 {
-    padding: 0 13px;
-  }
-  h4 {
-    padding: 0 15px;
-  }
-  h5 {
-    padding: 0 17px;
-  }
   p{
     text-align: justify;
-    padding: 0 20px;
+    padding: 10px 10px;
     line-height: 1.5em;
-    font-size: 20px;
-    color: $font-color;
-    margin-bottom: 1rem;
+    font-size: 25px;
     img{
       max-width: 100%;
       width: auto;
